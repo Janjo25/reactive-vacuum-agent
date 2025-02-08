@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Simulación de Aspiradora Inteligente</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Simulación de Aspiradora Inteligente</h1>
+
+    <label for="startLocation">Ubicación Inicial:</label>
+    <select id="startLocation">
+        <option value="A">Habitación A</option>
+        <option value="B">Habitación B</option>
+    </select>
+
+    <label for="statusA">Estado inicial de la Habitación A:</label>
+    <select id="statusA">
+        <option value="Dirty">Sucia</option>
+        <option value="Clean">Limpia</option>
+    </select>
+
+    <label for="statusB">Estado inicial de la Habitación B:</label>
+    <select id="statusB">
+        <option value="Dirty">Sucia</option>
+        <option value="Clean">Limpia</option>
+    </select>
+
+    <button onclick="startSimulation()">Iniciar Simulación</button>
+
+    <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
